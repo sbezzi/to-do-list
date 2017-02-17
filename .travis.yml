@@ -3,15 +3,15 @@ sudo: false
 node_js: 6.7.0
 edge: true
 script:
-- . ./scripts/run_test.sh
-- . ./scripts/run_coverage.sh
+- ". ./scripts/run_test.sh"
+- ". ./scripts/run_coverage.sh"
 deploy:
   provider: cloudfoundry
   api: https://api.ng.bluemix.net
   username: valerio.riva@it.ibm.com
   password:
-    secure: q7G1J4iSqMnqxbvd7ox0NAxYhs9tyDBipqJeEJQYa/VkhHziv64DZ/lR7MODRjZu8LktxEDaWdeiWpISR30G91Sko0L6yU7hXSL2HKfoAZq0VaN4/kHGlgW5y2oBMByRPZ/Dg2wDLkIDn7+/OMmv54RhX7lbfrgkOI/JhW+XV/jtA5pQokYbaLiMje6gg/Xe25Z79ONb0W9DfSb0O71MMtvTQZMkJknSrs9SHRaDLN6S6SQcNJP0OqLn1YXgp+DrFtxrdTiXzAJ8GkIaG7r7R9SZsPIXY5tzZQjTbp63DBsDBrybKIrUvHTcN5XwzBnMOt0QKGjaBU0f7VWSTuG+HJ6ZDL1cvVeoljOnjm2+RCMg6L3IllUfgN41YCL3PtiBpN3QQRw+RSU5WpjO07/9DmVb7LyBHWAJO2wqEMl/FxJZRa0LnlzRHcNSWJGJkkcyz6UJCCfZe7uPqYJBPuPtdbjbTBHkNjJzRpW8gB8YOnxLCv6FSO77UC8tTtEWQyU4rzg1WBoxnTDez/BV84Av3a1++1XwWMC2eZL4DkscPQLhZLrRZAgTh/eSmSW2cF/qxiiptddwtPwXE02Xj/J17vXQJUqW5lNlkEQJBdqUuzmSP5g4e7HFM6iFx0x7mtv8HT3MOdb209UkBNNjR6k3G6oLFCCW9SU8xr/n/DZwRu8=
+    secure: nCleww+yR15viZrfmRqKG5UiMLYgQA4E3K6fnxMXIRlfTLcvjYkaxRRKK1LjuSYHCkGSe8dJKWyzKPJEcj5BybCa3spwTHsGF4vbR1bl0Ijs7jJ64tnBYoLuf49ChADaVElkv9W3+n0zSq60A7rSjbQdM8ycnJWtgofpi5c+7BCDTQIVxCzT3qFi4eZHs7kiQTrve0EOcobGzwou9hrKtTnurXBXsEKb/WQZQeHZxrVwSk/D/J2u6n1HfmIlti8EQhzSjW6X56Q/0bfV28Y0ZxIuRNFNYo31WPEFnmmmvAGrzJybVDg2tC6o/KlmUaK86PiAhouPMDbCWhemU5ilMdruVSzNh9s/HQOtZcg9ZjA3x7XyCHBTyqW+kjwNhkaIpPszP00pXJybQMdn8CjYoAg1UltMV3giXr1sKA6/K/nD1wGITneRLkpBd0GNzSSaY6suTfi/emIZ8WUr6V+LrpOlItHHI3IO8t1E7r9cuyw1ncyjHFmsOSK2Ui1m0oTdhZCwvCai1JstC60btWoNSE+siCWREHFZM/4ykLucGfsbGZ+DZArsM5p0xReYTqyoiXM9Ve6Zei0VYIBNucJ4VJCn0CpRJggOBqsqnlRdrrGoUTNVx7LNnj47UMunBudtBZoYY9//L0WiYOG0fW2dLo+hemOgZNGKqdyqPH/KgGI=
   organization: valerio.riva@it.ibm.com
   space: devUSSouth
   on:
-    repo: valerio-riva/to-do-list
+    repo: Lotti/to-do-list
