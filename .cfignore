@@ -1,0 +1,4 @@
+node_modules
+coverage
+test
+vcap-local.json

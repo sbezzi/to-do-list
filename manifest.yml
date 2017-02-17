@@ -1,0 +1,6 @@
+applications:
+- name:      valerio-todo
+  host:      valerio-todo
+  memory:    128M
+  services:
+  - todo-db 

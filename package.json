@@ -1,0 +1,38 @@
+{
+  "name": "bluemix-todo-apps-node",
+  "scripts": {
+    "start": "node server.js",
+    "test": "DB_MEMORY=true mocha test/*.js",
+    "coverage": "DB_MEMORY=true istanbul cover _mocha test/*.js --report html -- -R spec --timeout 300000",
+    "test-ui": "DB_MEMORY=true node test-ui/01-ui.spec.js"
+  },
+  "description": "node server for TodoMVC using Cloudant, CouchDB or Mongo for storage",
+  "version": "1.0.0",
+  "private": false,
+  "engines": {
+    "node": ">6.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/todo-apps.git"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cf-deployment-tracker-client": "*",
+    "cfenv": "1.0.3",
+    "cloudant": "1.6.2",
+    "express": "4.14.0",
+    "mongodb": "2.2.12"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "nightmare": "^2.9.1",
+    "nock": "9.0.2",
+    "should": "^11.2.0",
+    "supertest": "2.0.1"
+  },
+  "author": "IBM",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,39 @@
+declaring environment vars to run tests in the proper way
+running server in background...
+waiting 5 seconds to be sure that the server is fully loaded and running...
+running mocha with timeout  and slow threshold ...
+
+> bluemix-todo-apps-node@1.0.0 test /Users/vriva/Repos/Valerio/to-do-list
+> DB_MEMORY=true mocha test/*.js
+
+
+
+  DB
+    ✓ should be empty
+    ✓ should be able to create an item
+    ✓ should be able to read an item
+    ✓ should be able to update an item
+    ✓ should be able to delete an item
+
+  API
+    scenario 1 - create an entry and retrieve it
+      ✓ database must be empty
+      ✓ create an item
+      ✓ retrieve an item
+      ✓ update an item
+      ✓ delete an item
+      ✓ database should be empty
+
+  UI
+    1) test
+
+
+  11 passing (2s)
+  1 failing
+
+  1) UI test:
+     Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.
+  
+
+
+
