@@ -4,7 +4,6 @@ node_js: 6.7.0
 edge: true
 script:
 - ". ./scripts/run_test.sh"
-- ". ./scripts/run_coverage.sh"
 deploy:
   provider: cloudfoundry
   api: https://api.ng.bluemix.net
